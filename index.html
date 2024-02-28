@@ -3,80 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda en Línea</title>
+    <title>Tu Tienda Online</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
         header {
             text-align: center;
             padding: 20px;
-            background-color: #f2f2f2;
+            background-color: #f0f0f0;
         }
 
         nav {
             text-align: center;
+            padding: 10px;
             background-color: #333;
             color: white;
-            padding: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: inline-block;
-        }
-
-        section {
-            padding: 20px;
         }
 
         #banner-container {
             overflow: hidden;
+            white-space: nowrap;
         }
 
         .banner {
-            width: 100%;
             display: inline-block;
-            animation: moveBanner 10s linear infinite;
+            width: 100%;
+            animation: scrollBanners 15s linear infinite;
         }
 
-        @keyframes moveBanner {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(100%); }
+        @keyframes scrollBanners {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
         }
     </style>
 </head>
 <body>
-
     <header>
-        <img src="tu_logo.png" alt="Logo de la tienda" width="200">
+        <img src="tu_logo.png" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
-
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Categoría 1</a>
-        <a href="#">Categoría 2</a>
-        <a href="#">Categoría 3</a>
+        <a href="#">Categoría 1</a> |
+        <a href="#">Categoría 2</a> |
+        <a href="#">Categoría 3</a> |
         <!-- Agrega más categorías según sea necesario -->
     </nav>
-
-    <section>
-        <div id="banner-container">
-            <img class="banner" src="banner1.jpg" alt="Banner 1">
-            <img class="banner" src="banner2.jpg" alt="Banner 2">
-            <img class="banner" src="banner3.jpg" alt="Banner 3">
-            <img class="banner" src="banner4.jpg" alt="Banner 4">
-            <img class="banner" src="banner5.jpg" alt="Banner 5">
-            <img class="banner" src="banner6.jpg" alt="Banner 6">
+    <div id="banner-container">
+        <div class="banner">
+            <img src="banner1.jpg" alt="Banner 1" style="width: 100%;">
         </div>
-    </section>
+        <div class="banner">
+            <img src="banner2.jpg" alt="Banner 2" style="width: 100%;">
+        </div>
+        <!-- Agrega más banners según sea necesario -->
+    </div>
 
-    <!-- Aquí agregarías más secciones según sea necesario -->
-
+    <script>
+        // Puedes agregar scripts adicionales aquí según sea necesario
+    </script>
 </body>
 </html>
