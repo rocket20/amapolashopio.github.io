@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Tienda Online</title>
+    <title>Amapola</title>
     <style>
         body {
             margin: 0;
@@ -24,6 +24,7 @@
         }
 
         #banner-container {
+            position: relative;
             overflow: hidden;
             white-space: nowrap;
         }
@@ -34,19 +35,30 @@
             animation: scrollBanners 15s linear infinite;
         }
 
-        @keyframes scrollBanners {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
+        .banner img {
+            width: 100%;
+        }
+
+        .navigation-bar {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navigation-bar button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 0 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="tu_logo.png" alt="Logo de la tienda" style="max-width: 200px;">
+        <img src="amapolashopio.github.io/assets/images/logo/logoamapola.svg" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
     <nav>
         <a href="#">Categoría 1</a> |
@@ -56,16 +68,53 @@
     </nav>
     <div id="banner-container">
         <div class="banner">
-            <img src="banner1.jpg" alt="Banner 1" style="width: 100%;">
+            <img src="banner1.jpg" alt="Banner 1">
         </div>
         <div class="banner">
-            <img src="banner2.jpg" alt="Banner 2" style="width: 100%;">
+            <img src="banner2.jpg" alt="Banner 2">
         </div>
         <!-- Agrega más banners según sea necesario -->
+        <div class="navigation-bar" id="navigation-bar"></div>
     </div>
 
     <script>
-        // Puedes agregar scripts adicionales aquí según sea necesario
+        const banners = document.querySelectorAll('.banner');
+        const navigationBar = document.getElementById('navigation-bar');
+
+        let currentBannerIndex = 0;
+
+        function showBanner(index) {
+            banners.forEach((banner, i) => {
+                banner.style.transform = `translateX(${100 * (i - index)}%)`;
+            });
+        }
+
+        function updateNavigationButtons() {
+            navigationBar.innerHTML = '';
+            banners.forEach((_, i) => {
+                const button = document.createElement('button');
+                button.textContent = i + 1;
+                button.addEventListener('click', () => {
+                    currentBannerIndex = i;
+                    showBanner(currentBannerIndex);
+                });
+                navigationBar.appendChild(button);
+            });
+        }
+
+        function nextBanner() {
+            currentBannerIndex = (currentBannerIndex + 1) % banners.length;
+            showBanner(currentBannerIndex);
+            updateNavigationButtons();
+        }
+
+        // Iniciar la reproducción automática
+        setInterval(nextBanner, 5000); // Cambiar el intervalo según sea necesario (en milisegundos)
+
+        // Mostrar el primer banner y configurar los botones de navegación
+        showBanner(currentBannerIndex);
+        updateNavigationButtons();
     </script>
 </body>
 </html>
+
