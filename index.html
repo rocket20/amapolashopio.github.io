@@ -12,20 +12,20 @@
             color: #000;
         }
 
-        header {
+        header, nav, footer {
+            padding: 10px;
             text-align: center;
-            padding: 20px;
+        }
+
+        header {
             background-color: #f0f0f0;
         }
 
         nav {
-            text-align: center;
-            padding: 10px;
-            background-color: #fff; /* Cambiado a blanco */
-            color: #000;
+            background-color: #fff;
         }
 
-        #banner-container {
+        .banner-container {
             position: relative;
             overflow: hidden;
             white-space: nowrap;
@@ -60,8 +60,6 @@
         footer {
             background-color: #000;
             color: #fff;
-            text-align: center;
-            padding: 10px;
         }
     </style>
 </head>
@@ -70,17 +68,17 @@
         <img src="assets/images/logo/logoamapola.svg" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
     <nav>
-        <a href="#" style="color: #000;">Categoría 1</a> |
-        <a href="#" style="color: #000;">Categoría 2</a> |
-        <a href="#" style="color: #000;">Categoría 3</a> |
+        <a href="#">Categoría 1</a> |
+        <a href="#">Categoría 2</a> |
+        <a href="#">Categoría 3</a> |
         <!-- Agrega más categorías según sea necesario -->
     </nav>
-    <div id="banner-container">
+    <div class="banner-container">
         <div class="banner">
             <img src="assets/images/banner-1.jpg" alt="Banner 1">
         </div>
         <div class="banner">
-            <img src="assets/images/banner-2.jpg" alt="Banner 2">
+            <img src="assets/images/banner-3.jpg" alt="Banner 2">
         </div>
         <!-- Agrega más banners según sea necesario -->
         <div class="navigation-bar" id="navigation-bar"></div>
