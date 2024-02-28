@@ -24,14 +24,15 @@
         nav {
             background-color: #fff;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
         }
 
         nav a {
             margin: 5px;
             color: #000;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .banner-container {
@@ -71,10 +72,28 @@
             color: #fff;
         }
 
+        /* Media Query para dispositivos con un ancho máximo de 600px */
         @media only screen and (max-width: 600px) {
             nav {
                 flex-direction: column;
-                align-items: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+            }
+
+            .menu-icon {
+                display: block;
+                cursor: pointer;
+            }
+
+            .menu-list {
+                display: none;
+            }
+
+            .menu-list.show {
+                display: block;
             }
         }
     </style>
@@ -84,13 +103,23 @@
         <img src="assets/images/logo/logoamapola.svg" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
     <nav>
-        <a href="#">Categoría 1</a>
-        <a href="#">Categoría 2</a>
-        <a href="#">Categoría 3</a>
-        <a href="#">Categoría 4</a>
-        <a href="#">Categoría 5</a>
-        <a href="#">Categoría 6</a>
+        <a href="#">Shop All</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Ready To Wear</a>
+        <a href="#">Resort</a>
+        <a href="#">Bridal</a>
+        <a href="#">Home Collection</a>
         <!-- Agrega más categorías según sea necesario -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-list" id="menu-list">
+            <a href="#">Shop All</a>
+            <a href="#">New Arrivals</a>
+            <a href="#">Ready To Wear</a>
+            <a href="#">Resort</a>
+            <a href="#">Bridal</a>
+            <a href="#">Home Collection</a>
+            <!-- Agrega más categorías según sea necesario -->
+        </div>
     </nav>
     <div class="banner-container">
         <div class="banner">
@@ -113,6 +142,7 @@
     <script>
         const banners = document.querySelectorAll('.banner');
         const navigationBar = document.getElementById('navigation-bar');
+        const menuList = document.getElementById('menu-list');
 
         let currentBannerIndex = 0;
 
@@ -141,6 +171,10 @@
             updateNavigationButtons();
         }
 
+        function toggleMenu() {
+            menuList.classList.toggle('show');
+        }
+
         // Iniciar la reproducción automática
         setInterval(nextBanner, 5000); // Cambiar el intervalo según sea necesario (en milisegundos)
 
@@ -150,6 +184,7 @@
     </script>
 </body>
 </html>
+
 
 
 
