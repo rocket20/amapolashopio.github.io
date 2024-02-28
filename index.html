@@ -23,6 +23,18 @@
 
         nav {
             background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            padding: 8px;
+            border: 1px solid #000;
+            border-radius: 5px;
         }
 
         .banner-container {
@@ -61,6 +73,13 @@
             background-color: #000;
             color: #fff;
         }
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
     </style>
 </head>
 <body>
@@ -68,12 +87,12 @@
         <img src="assets/images/logo/logoamapola.svg" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
     <nav>
-        <a href="#">Categoría 1</a> |
-        <a href="#">Categoría 2</a> |
-        <a href="#">Categoría 3</a> |
-        <a href="#">Categoría 4</a> |
-        <a href="#">Categoría 5</a> |
-        <a href="#">Categoría 6</a> |
+        <a href="#">Categoría 1</a>
+        <a href="#">Categoría 2</a>
+        <a href="#">Categoría 3</a>
+        <a href="#">Categoría 4</a>
+        <a href="#">Categoría 5</a>
+        <a href="#">Categoría 6</a>
         <!-- Agrega más categorías según sea necesario -->
     </nav>
     <div class="banner-container">
