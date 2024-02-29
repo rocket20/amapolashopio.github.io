@@ -72,7 +72,7 @@
             color: #fff;
         }
 
-        /* Media Query para dispositivos con un ancho máximo de 600px */
+        /* Media Query solo para dispositivos con un ancho máximo de 600px */
         @media only screen and (max-width: 600px) {
             nav {
                 flex-direction: column;
@@ -81,6 +81,7 @@
 
             nav a {
                 display: block;
+                margin: 5px;
             }
 
             .menu-icon {
@@ -105,20 +106,14 @@
     <nav>
         <a href="#">Shop All</a>
         <a href="#">New Arrivals</a>
-        <a href="#">Ready To Wear</a>
+        <a href="#">Ready to wear</a>
         <a href="#">Resort</a>
         <a href="#">Bridal</a>
-        <a href="#">Home Collection</a>
+        <a href="#">Home collection</a>
         <!-- Agrega más categorías según sea necesario -->
         <div class="menu-icon" onclick="toggleMenu()">☰</div>
         <div class="menu-list" id="menu-list">
-            <a href="#">Shop All</a>
-            <a href="#">New Arrivals</a>
-            <a href="#">Ready To Wear</a>
-            <a href="#">Resort</a>
-            <a href="#">Bridal</a>
-            <a href="#">Home Collection</a>
-            <!-- Agrega más categorías según sea necesario -->
+            <!-- El menú desplegable usa las mismas categorías -->
         </div>
     </nav>
     <div class="banner-container">
@@ -181,9 +176,19 @@
         // Mostrar el primer banner y configurar los botones de navegación
         showBanner(currentBannerIndex);
         updateNavigationButtons();
+
+        // Rellenar el menú desplegable con las mismas categorías
+        const categories = document.querySelectorAll('nav a');
+        categories.forEach(category => {
+            const menuItem = document.createElement('a');
+            menuItem.href = category.href;
+            menuItem.textContent = category.textContent;
+            menuList.appendChild(menuItem);
+        });
     </script>
 </body>
 </html>
+
 
 
 
