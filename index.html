@@ -43,11 +43,12 @@
 
         .product {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* Modificado para evitar el ajuste de línea */
+            overflow-x: auto;
         }
 
         .product > div {
-            flex: 1;
+            flex: 0 0 auto;
             margin: 10px;
             text-align: center;
         }
