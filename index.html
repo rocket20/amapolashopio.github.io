@@ -12,10 +12,22 @@
             color: #333;
         }
 
+        header, nav, section {
+            border-top: 5px solid #fff; /* Borde blanco en la parte superior */
+            transition: border-top 0.3s ease; /* Transición suave */
+        }
+
         header {
             background-color: #fff;
             padding: 20px;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000; /* Para estar por encima del resto del contenido */
+        }
+
+        header img {
+            max-width: 150px;
         }
 
         nav {
@@ -24,7 +36,11 @@
             text-align: center;
             padding: 10px;
             display: flex;
-            overflow-x: auto;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            top: 80px; /* Ajusta según el tamaño del header */
+            z-index: 1000; /* Para estar por encima del resto del contenido */
         }
 
         nav a {
@@ -35,7 +51,8 @@
         }
 
         main {
-            padding: 20px;
+            padding: 120px 20px 20px; /* Ajuste del espacio para evitar que el contenido se oculte detrás del header y nav */
+            position: relative; /* Asegura que las secciones sean posicionadas en relación con el main */
         }
 
         section {
@@ -68,12 +85,14 @@
             color: #fff;
             padding: 10px;
             text-align: center;
+            position: relative;
+            clear: both; /* Asegura que el pie de página esté después del contenido */
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/images/logo/logoamapola.svg" alt="Apple Logo" style="max-width: 150px;">
+        <img src="assets/images/logo/logoamapola.svg" alt="Amapola Logo">
     </header>
     
     <nav>
@@ -87,112 +106,71 @@
 
     <main>
         <section class="product">
+            <!-- Contenido de la sección 1 -->
+            <h2>Sección 1</h2>
             <div>            
-                <img src="assets/images/1.jpg" alt="iPhone 13 Pro">                                               
+                <img src="assets/images/1.jpg" alt="Producto 1"> 
+                <p>Categoría 1</p>
             </div>
             <div>                     
-                <img src="assets/images/2.jpg" alt="iPhone 13 Pro">                      
+                <img src="assets/images/2.jpg" alt="Producto 2">   
+                <p>Categoría 2</p>                   
             </div>
             <div>          
-                <img src="assets/images/3.jpg" alt="iPhone 13 Pro">               
+                <img src="assets/images/3.jpg" alt="Producto 3"> 
+                <p>Categoría 3</p>              
             </div>
-            <div>       
-                <img src="assets/images/4.jpg" alt="iPhone 13 Pro">             
-            </div>
-            <div>            
-                <img src="assets/images/5.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="iPhone 13 Pro">             
-            </div>  
         </section>
+
         <section class="product">
-            <div>            
-                <img src="assets/images/1.jpg" alt="iPhone 13 Pro">                                               
-            </div>
-            <div>                     
-                <img src="assets/images/2.jpg" alt="iPhone 13 Pro">                      
-            </div>
-            <div>          
-                <img src="assets/images/3.jpg" alt="iPhone 13 Pro">               
-            </div>
+            <!-- Contenido de la sección 2 -->
+            <h2>Sección 2</h2>
             <div>       
-                <img src="assets/images/4.jpg" alt="iPhone 13 Pro">             
+                <img src="assets/images/4.jpg" alt="Producto 4">
+                <p>Categoría 4</p>             
             </div>
             <div>            
-                <img src="assets/images/5.jpg" alt="iPhone 13 Pro">               
+                <img src="assets/images/5.jpg" alt="Producto 5"> 
+                <p>Categoría 5</p>             
             </div>
             <div>                
-                <img src="assets/images/6.jpg" alt="iPhone 13 Pro">             
-            </div>  
+                <img src="assets/images/6.jpg" alt="Producto 6"> 
+                <p>Categoría 6</p>             
+            </div>
         </section>
-        <section class="product">
-            <div>            
-                <img src="assets/images/1.jpg" alt="iPhone 13 Pro">                                               
-            </div>
-            <div>                     
-                <img src="assets/images/2.jpg" alt="iPhone 13 Pro">                      
-            </div>
-            <div>          
-                <img src="assets/images/3.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>       
-                <img src="assets/images/4.jpg" alt="iPhone 13 Pro">             
-            </div>
-            <div>            
-                <img src="assets/images/5.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="iPhone 13 Pro">             
-            </div>  
-        </section>
-            <section class="product">
-            <div>            
-                <img src="assets/images/1.jpg" alt="iPhone 13 Pro">                                               
-            </div>
-            <div>                     
-                <img src="assets/images/2.jpg" alt="iPhone 13 Pro">                      
-            </div>
-            <div>          
-                <img src="assets/images/3.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>       
-                <img src="assets/images/4.jpg" alt="iPhone 13 Pro">             
-            </div>
-            <div>            
-                <img src="assets/images/5.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="iPhone 13 Pro">             
-            </div>  
-        </section>
-        <section class="product">
-            <div>            
-                <img src="assets/images/1.jpg" alt="iPhone 13 Pro">                                               
-            </div>
-            <div>                     
-                <img src="assets/images/2.jpg" alt="iPhone 13 Pro">                      
-            </div>
-            <div>          
-                <img src="assets/images/3.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>       
-                <img src="assets/images/4.jpg" alt="iPhone 13 Pro">             
-            </div>
-            <div>            
-                <img src="assets/images/5.jpg" alt="iPhone 13 Pro">               
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="iPhone 13 Pro">             
-            </div>  
-        </section>
-     
+
+        <!-- Agrega más secciones según sea necesario -->
+
     </main>
 
     <footer>
         &copy; 2024 Amapola. All rights reserved.
     </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var scrollPosition = window.scrollY;
+            var header = document.querySelector('header');
+            var nav = document.querySelector('nav');
+            var sections = document.querySelectorAll('section');
+
+            header.style.borderTop = scrollPosition === 0 ? '5px solid #fff' : 'none';
+            nav.style.borderTop = scrollPosition === 0 ? '5px solid #fff' : 'none';
+
+            sections.forEach(function(section) {
+                var rect = section.getBoundingClientRect();
+                var sectionTop = rect.top + scrollPosition;
+
+                if (sectionTop <= 80) { // 80 es el tamaño del header
+                    section.style.borderTop = 'none';
+                } else {
+                    section.style.borderTop = '5px solid #fff';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
 
 
