@@ -53,17 +53,20 @@
         main {
             padding: 120px 20px 20px; /* Ajuste del espacio para evitar que el contenido se oculte detrás del header y nav */
             position: relative; /* Asegura que las secciones sean posicionadas en relación con el main */
+            overflow: hidden; /* Oculta el contenido que se desborda de las secciones */
         }
 
         section {
             margin-bottom: 30px;
+            display: flex;
+            overflow-x: scroll;
+            scroll-behavior: smooth; /* Transición suave al hacer scroll */
         }
 
-        .product {
+         .product {
             display: flex;
             flex-wrap: nowrap;
-            overflow-x: auto;
-            justify-content: center;
+            transition: transform 0.3s ease; /* Ajusta la velocidad del parallax */
         }
 
         .product > div {
@@ -273,26 +276,21 @@
         &copy; 2024 Amapola. All rights reserved.
     </footer>
 
-    <script>
+   <script>
+        var parallaxSection = document.getElementById('parallax-section');
+        var productDivs = document.querySelectorAll('.product > div');
+
         window.addEventListener('scroll', function() {
             var scrollPosition = window.scrollY;
-            var header = document.querySelector('header');
-            var nav = document.querySelector('nav');
-            var sections = document.querySelectorAll('section');
+            var parallaxValue = scrollPosition * 0.3; // Ajusta la velocidad del parallax
 
-            header.style.borderTop = scrollPosition === 0 ? '5px solid #fff' : 'none';
-            nav.style.borderTop = scrollPosition === 0 ? '5px solid #fff' : 'none';
-
-            sections.forEach(function(section) {
-                var rect = section.getBoundingClientRect();
-                var sectionTop = rect.top + scrollPosition;
-
-                if (sectionTop <= 80) { // 80 es el tamaño del header
-                    section.style.borderTop = 'none';
-                } else {
-                    section.style.borderTop = '5px solid #fff';
-                }
+            productDivs.forEach(function(div) {
+                div.style.transform = 'translateX(' + parallaxValue + 'px)';
             });
+
+            if (scrollPosition >= parallaxSection.offsetWidth) {
+                parallaxSection.scrollLeft = 0;
+            }
         });
     </script>
 </body>
