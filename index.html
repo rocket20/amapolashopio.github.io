@@ -66,7 +66,6 @@
         .product {
             display: flex;
             flex-wrap: nowrap;
-            transition: transform 0.3s ease; /* Ajusta la velocidad del parallax */
         }
 
         .product > div {
@@ -183,7 +182,67 @@
                 <img src="assets/images/6.jpg" alt="Producto 12"> 
             </div>
         </section>
-        
+        <div> 
+            <section class="product">
+                <img src="assets/images/1.jpg" alt="Producto 7">
+            </div>
+            <div>            
+                <img src="assets/images/2.jpg" alt="Producto 8"> 
+            </div>
+            <div>                
+                <img src="assets/images/3.jpg" alt="Producto 9"> 
+            </div>
+            <div>            
+                <img src="assets/images/4.jpg" alt="Producto 10"> 
+            </div>
+            <div>                
+                <img src="assets/images/5.jpg" alt="Producto 11"> 
+            </div>
+            <div>                
+                <img src="assets/images/6.jpg" alt="Producto 12"> 
+            </div>
+        </section>
+        <div>  
+            <section class="product">
+                <img src="assets/images/1.jpg" alt="Producto 7">
+            </div>
+            <div>            
+                <img src="assets/images/2.jpg" alt="Producto 8"> 
+            </div>
+            <div>                
+                <img src="assets/images/3.jpg" alt="Producto 9"> 
+            </div>
+            <div>            
+                <img src="assets/images/4.jpg" alt="Producto 10"> 
+            </div>
+            <div>                
+                <img src="assets/images/5.jpg" alt="Producto 11"> 
+            </div>
+            <div>                
+                <img src="assets/images/6.jpg" alt="Producto 12"> 
+            </div>
+        </section>
+        <div> 
+            <section class="product">
+                <img src="assets/images/1.jpg" alt="Producto 7">
+            </div>
+            <div>            
+                <img src="assets/images/2.jpg" alt="Producto 8"> 
+            </div>
+            <div>                
+                <img src="assets/images/3.jpg" alt="Producto 9"> 
+            </div>
+            <div>            
+                <img src="assets/images/4.jpg" alt="Producto 10"> 
+            </div>
+            <div>                
+                <img src="assets/images/5.jpg" alt="Producto 11"> 
+            </div>
+            <div>                
+                <img src="assets/images/6.jpg" alt="Producto 12"> 
+            </div>
+        </section>
+
         <!-- Agrega más secciones según sea necesario -->
 
     </main>
@@ -215,26 +274,9 @@
         
         &copy; 2024 Amapola. All rights reserved.
     </footer>
-
-   <script>
-        var parallaxSection = document.querySelector('.product');
-        var productDivs = document.querySelectorAll('.product > div');
-
-        window.addEventListener('scroll', function() {
-            var scrollPosition = window.scrollY;
-            var parallaxValue = scrollPosition * 0.3; // Ajusta la velocidad del parallax
-
-            productDivs.forEach(function(div) {
-                div.style.transform = 'translateX(' + parallaxValue + 'px)';
-            });
-
-            if (scrollPosition >= parallaxSection.offsetWidth) {
-                parallaxSection.scrollLeft = 0;
-            }
-        });
-    </script>
 </body>
 </html>
+
 
 
 
