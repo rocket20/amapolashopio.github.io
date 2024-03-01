@@ -3,193 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amapola</title>
+    <title>Tienda Amapola</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fff;
-            color: #000;
+        /* ... (Tu CSS existente) ... */
+
+        /* Nuevos estilos para la tienda */
+        main {
+            padding: 20px;
         }
 
-        header, nav, footer {
+        .product-section {
+            margin-bottom: 30px;
+        }
+
+        .product {
+            border: 1px solid #ddd;
             padding: 10px;
+            margin: 10px;
             text-align: center;
         }
 
-        header {
-            background-color: #f0f0f0;
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
         }
 
-        nav {
-            background-color: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav a {
-            margin: 5px;
-            color: #000;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .banner-container {
-            position: relative;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .banner {
-            display: inline-block;
-            width: 100%;
-            animation: scrollBanners 15s linear infinite;
-        }
-
-        .banner img {
-            width: 100%;
-        }
-
-        .navigation-bar {
-            position: absolute;
-            bottom: 10px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .navigation-bar button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-        }
-
-        /* Media Query solo para dispositivos con un ancho máximo de 600px */
-        @media only screen and (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            nav a {
-                display: block;
-                margin: 5px;
-            }
-
-            .menu-icon {
-                display: block;
-                cursor: pointer;
-            }
-
-            .menu-list {
-                display: none;
-            }
-
-            .menu-list.show {
-                display: block;
-            }
-        }
+        /* ... (Otros estilos adicionales) ... */
     </style>
 </head>
 <body>
     <header>
-        <img src="assets/images/logo/logoamapola.svg" alt="Logo de la tienda" style="max-width: 200px;">
+        <!-- ... (Tu encabezado existente) ... -->
     </header>
-    <nav>
-        <a href="#">Shop All</a>
-        <a href="#">New Arrivals</a>
-        <a href="#">Ready to wear</a>
-        <a href="#">Resort</a>
-        <a href="#">Bridal</a>
-        <a href="#">Home collection</a>
-        <!-- Agrega más categorías según sea necesario -->
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <div class="menu-list" id="menu-list">
-            <!-- El menú desplegable usa las mismas categorías -->
-        </div>
-    </nav>
-    <div class="banner-container">
-        <div class="banner">
-            <img src="assets/images/banner-1.jpg" alt="Banner 1">
-        </div>
-        <div class="banner">
-            <img src="assets/images/banner-2.jpg" alt="Banner 2">
-        </div>
-        <div class="banner">
-            <img src="assets/images/banner-3.jpg" alt="Banner 3">
-        </div>
-        <!-- Agrega más banners según sea necesario -->
-        <div class="navigation-bar" id="navigation-bar"></div>
-    </div>
     
+    <nav>
+        <!-- ... (Tu barra de navegación existente) ... -->
+    </nav>
+
+    <main>
+        <section class="product-section">
+            <h2>Productos Destacados</h2>
+            <div class="banner-container">
+                <!-- Puedes usar la misma lógica de banners para productos destacados -->
+                <!-- Aquí irían imágenes y enlaces a productos destacados -->
+            </div>
+        </section>
+
+        <section class="product-section">
+            <h2>Ofertas Especiales</h2>
+            <div class="banner-container">
+                <!-- Puedes usar la misma lógica de banners para ofertas especiales -->
+                <!-- Aquí irían imágenes y enlaces a productos en oferta -->
+            </div>
+        </section>
+
+        <section class="product-section">
+            <h2>Productos Individuales</h2>
+            <div class="product">
+                <img src="ruta-de-la-imagen.jpg" alt="Nombre del Producto">
+                <h3>Nombre del Producto</h3>
+                <p>Descripción del producto.</p>
+                <p>Precio: $XX.XX</p>
+                <button>Añadir al Carrito</button>
+            </div>
+
+            <!-- Puedes agregar más productos utilizando la misma estructura -->
+        </section>
+    </main>
+
     <footer>
-        © 2024 Amapola. Todos los derechos reservados.
+        <!-- ... (Tu pie de página existente) ... -->
     </footer>
 
     <script>
-        const banners = document.querySelectorAll('.banner');
-        const navigationBar = document.getElementById('navigation-bar');
-        const menuList = document.getElementById('menu-list');
-
-        let currentBannerIndex = 0;
-
-        function showBanner(index) {
-            banners.forEach((banner, i) => {
-                banner.style.transform = `translateX(${100 * (i - index)}%)`;
-            });
-        }
-
-        function updateNavigationButtons() {
-            navigationBar.innerHTML = '';
-            banners.forEach((_, i) => {
-                const button = document.createElement('button');
-                button.textContent = i + 1;
-                button.addEventListener('click', () => {
-                    currentBannerIndex = i;
-                    showBanner(currentBannerIndex);
-                });
-                navigationBar.appendChild(button);
-            });
-        }
-
-        function nextBanner() {
-            currentBannerIndex = (currentBannerIndex + 1) % banners.length;
-            showBanner(currentBannerIndex);
-            updateNavigationButtons();
-        }
-
-        function toggleMenu() {
-            menuList.classList.toggle('show');
-        }
-
-        // Iniciar la reproducción automática
-        setInterval(nextBanner, 5000); // Cambiar el intervalo según sea necesario (en milisegundos)
-
-        // Mostrar el primer banner y configurar los botones de navegación
-        showBanner(currentBannerIndex);
-        updateNavigationButtons();
-
-        // Rellenar el menú desplegable con las mismas categorías
-        const categories = document.querySelectorAll('nav a');
-        categories.forEach(category => {
-            const menuItem = document.createElement('a');
-            menuItem.href = category.href;
-            menuItem.textContent = category.textContent;
-            menuList.appendChild(menuItem);
-        });
+        // ... (Tu script JavaScript existente) ...
     </script>
 </body>
 </html>
-
-
 
 
 
