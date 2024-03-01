@@ -63,7 +63,7 @@
             scroll-behavior: smooth; /* Transición suave al hacer scroll */
         }
 
-         .product {
+        .product {
             display: flex;
             flex-wrap: nowrap;
             transition: transform 0.3s ease; /* Ajusta la velocidad del parallax */
@@ -91,7 +91,7 @@
             position: relative;
             clear: both; /* Asegura que el pie de página esté después del contenido */
         }
-        
+
         footer a {
             color: #fff;
             text-decoration: none;
@@ -183,67 +183,7 @@
                 <img src="assets/images/6.jpg" alt="Producto 12"> 
             </div>
         </section>
-        <div> 
-            <section class="product">
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section>
-        <div>  
-            <section class="product">
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section>
-        <div> 
-            <section class="product">
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section>
-
+        
         <!-- Agrega más secciones según sea necesario -->
 
     </main>
@@ -277,7 +217,7 @@
     </footer>
 
    <script>
-        var parallaxSection = document.getElementById('parallax-section');
+        var parallaxSection = document.querySelector('.product');
         var productDivs = document.querySelectorAll('.product > div');
 
         window.addEventListener('scroll', function() {
