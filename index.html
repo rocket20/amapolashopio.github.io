@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple-like Web</title>
+    <title>Tienda Apple Style</title>
     <style>
         body {
             margin: 0;
@@ -20,84 +20,81 @@
 
         nav {
             background-color: #000;
-            color: #fff;
-            text-align: center;
             padding: 10px;
-        }
-
-        nav a {
-            margin: 0 15px;
+            text-align: center;
             color: #fff;
-            text-decoration: none;
         }
 
         main {
             padding: 20px;
         }
 
-        section {
-            margin-bottom: 30px;
+        .banner-container {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
 
-        .product {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px 0;
+        .story-banner {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            color: #fff;
             text-align: center;
-            background-color: #fff;
         }
 
-        .product img {
-            max-width: 100%;
-            height: auto;
+        .story-banner h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .story-banner p {
+            font-size: 1.2em;
             margin-bottom: 20px;
         }
 
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
+        /* Agrega estilos adicionales según sea necesario */
     </style>
 </head>
 <body>
     <header>
-        <img src="apple-logo.png" alt="Apple Logo" style="max-width: 150px;">
+        <img src="tu-logo.png" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
     
     <nav>
-        <a href="#">iPhone</a>
-        <a href="#">iPad</a>
-        <a href="#">Mac</a>
-        <a href="#">Watch</a>
-        <a href="#">TV</a>
-        <a href="#">Music</a>
-        <a href="#">Support</a>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+        <!-- Agrega más enlaces según sea necesario -->
     </nav>
 
     <main>
-        <section class="product">
-            <h2>iPhone 13 Pro</h2>
-            <img src="iphone13pro.jpg" alt="iPhone 13 Pro">
-            <p>The most advanced iPhone ever.</p>
-            <p>From $999</p>
-            <button>Buy Now</button>
-        </section>
+        <div class="banner-container">
+            <div class="story-banner" style="background-image: url('imagen1.jpg');">
+                <div>
+                    <h2>Historia 1</h2>
+                    <p>Descripción corta de la historia.</p>
+                </div>
+            </div>
 
-        <section class="product">
-            <h2>MacBook Air</h2>
-            <img src="macbookair.jpg" alt="MacBook Air">
-            <p>Apple's thinnest and lightest notebook.</p>
-            <p>From $999</p>
-            <button>Buy Now</button>
-        </section>
+            <div class="story-banner" style="background-image: url('imagen2.jpg');">
+                <div>
+                    <h2>Historia 2</h2>
+                    <p>Descripción corta de la historia.</p>
+                </div>
+            </div>
+
+            <!-- Repite este bloque para cada historia -->
+        </div>
     </main>
 
     <footer>
-        &copy; 2024 Apple Inc. All rights reserved.
+        &copy; 2024 Tu Tienda Apple Style. Todos los derechos reservados.
     </footer>
 </body>
 </html>
-
 
