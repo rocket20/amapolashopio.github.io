@@ -40,11 +40,14 @@
         }
 
         .product {
-            border: 1px solid #ddd;
-            padding: 20px;
-            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .product > div {
+            flex: 1;
+            margin: 10px;
             text-align: center;
-            background-color: #fff;
         }
 
         .product img {
