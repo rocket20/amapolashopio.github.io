@@ -3,30 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Apple Style</title>
+    <title>Amapola</title>
     <style>
         body {
             margin: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+        }
+
+        header, nav, footer {
+            padding: 10px;
+            text-align: center;
         }
 
         header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
+            background-color: #f0f0f0;
         }
 
         nav {
-            background-color: #000;
-            padding: 10px;
-            text-align: center;
-            color: #fff;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        main {
-            padding: 20px;
+        nav a {
+            margin: 5px;
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .banner-container {
@@ -36,7 +42,7 @@
         }
 
         .story-banner {
-            height: 100vh;
+            height: calc(100vh / 6); /* Divide la altura de la ventana por 6 para obtener el tamaño de cada banner */
             width: 100%;
             display: flex;
             justify-content: center;
@@ -56,44 +62,78 @@
             margin-bottom: 20px;
         }
 
-        /* Agrega estilos adicionales según sea necesario */
+        footer {
+            background-color: #000;
+            color: #fff;
+        }
+
+        /* Media Query solo para dispositivos con un ancho máximo de 600px */
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: block;
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <img src="tu-logo.png" alt="Logo de la tienda" style="max-width: 200px;">
+        <img src="assets/images/logo/logoamapola.svg" alt="Logo de la tienda" style="max-width: 200px;">
     </header>
-    
     <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Ofertas</a>
-        <a href="#">Contacto</a>
-        <!-- Agrega más enlaces según sea necesario -->
+        <a href="#">Shop All</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Ready to wear</a>
+        <a href="#">Resort</a>
+        <a href="#">Bridal</a>
+        <a href="#">Home collection</a>
+        <!-- Agrega más categorías según sea necesario -->
     </nav>
-
-    <main>
-        <div class="banner-container">
-            <div class="story-banner" style="background-image: url('imagen1.jpg');">
-                <div>
-                    <h2>Historia 1</h2>
-                    <p>Descripción corta de la historia.</p>
-                </div>
+    <div class="banner-container">
+        <div class="story-banner" style="background-image: url('assets/images/banner-1.jpg');">
+            <div>
+                <h2>Historia 1</h2>
+                <p>Descripción corta de la historia.</p>
             </div>
-
-            <div class="story-banner" style="background-image: url('imagen2.jpg');">
-                <div>
-                    <h2>Historia 2</h2>
-                    <p>Descripción corta de la historia.</p>
-                </div>
-            </div>
-
-            <!-- Repite este bloque para cada historia -->
         </div>
-    </main>
-
+        <div class="story-banner" style="background-image: url('assets/images/banner-2.jpg');">
+            <div>
+                <h2>Historia 2</h2>
+                <p>Descripción corta de la historia.</p>
+            </div>
+        </div>
+        <div class="story-banner" style="background-image: url('assets/images/banner-3.jpg');">
+            <div>
+                <h2>Historia 3</h2>
+                <p>Descripción corta de la historia.</p>
+            </div>
+        </div>
+        <div class="story-banner" style="background-image: url('assets/images/banner-4.jpg');">
+            <div>
+                <h2>Historia 4</h2>
+                <p>Descripción corta de la historia.</p>
+            </div>
+        </div>
+        <div class="story-banner" style="background-image: url('assets/images/banner-5.jpg');">
+            <div>
+                <h2>Historia 5</h2>
+                <p>Descripción corta de la historia.</p>
+            </div>
+        </div>
+        <div class="story-banner" style="background-image: url('assets/images/banner-6.jpg');">
+            <div>
+                <h2>Historia 6</h2>
+                <p>Descripción corta de la historia.</p>
+            </div>
+        </div>
+    </div>
     <footer>
-        &copy; 2024 Tu Tienda Apple Style. Todos los derechos reservados.
+        © 2024 Amapola. Todos los derechos reservados.
     </footer>
 </body>
 </html>
