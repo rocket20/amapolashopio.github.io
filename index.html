@@ -3,86 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda Amapola</title>
+    <title>Apple-like Web</title>
     <style>
-        /* ... (Tu CSS existente) ... */
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
 
-        /* Nuevos estilos para la tienda */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+
         main {
             padding: 20px;
         }
 
-        .product-section {
+        section {
             margin-bottom: 30px;
         }
 
         .product {
             border: 1px solid #ddd;
-            padding: 10px;
-            margin: 10px;
+            padding: 20px;
+            margin: 20px 0;
             text-align: center;
+            background-color: #fff;
         }
 
         .product img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
-        /* ... (Otros estilos adicionales) ... */
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- ... (Tu encabezado existente) ... -->
+        <img src="apple-logo.png" alt="Apple Logo" style="max-width: 150px;">
     </header>
     
     <nav>
-        <!-- ... (Tu barra de navegación existente) ... -->
+        <a href="#">iPhone</a>
+        <a href="#">iPad</a>
+        <a href="#">Mac</a>
+        <a href="#">Watch</a>
+        <a href="#">TV</a>
+        <a href="#">Music</a>
+        <a href="#">Support</a>
     </nav>
 
     <main>
-        <!-- Tu contenido existente -->
-
-        <section class="product-section">
-            <h2>Productos Destacados</h2>
-            <div class="banner-container">
-                <!-- Puedes usar la misma lógica de banners para productos destacados -->
-                <div class="banner">
-                    <div class="product">
-                        <img src="ruta-de-la-imagen-destacada.jpg" alt="Producto Destacado 1">
-                        <h3>Producto Destacado 1</h3>
-                        <p>Descripción del producto destacado.</p>
-                        <p>Precio: $XX.XX</p>
-                        <button>Añadir al Carrito</button>
-                    </div>
-                </div>
-            </div>
+        <section class="product">
+            <h2>iPhone 13 Pro</h2>
+            <img src="iphone13pro.jpg" alt="iPhone 13 Pro">
+            <p>The most advanced iPhone ever.</p>
+            <p>From $999</p>
+            <button>Buy Now</button>
         </section>
 
-        <section class="product-section">
-            <h2>Productos Individuales</h2>
-            <div class="product">
-                <img src="ruta-de-la-imagen.jpg" alt="Nombre del Producto">
-                <h3>Nombre del Producto</h3>
-                <p>Descripción del producto.</p>
-                <p>Precio: $XX.XX</p>
-                <button>Añadir al Carrito</button>
-            </div>
-
-            <!-- Puedes agregar más productos utilizando la misma estructura -->
+        <section class="product">
+            <h2>MacBook Air</h2>
+            <img src="macbookair.jpg" alt="MacBook Air">
+            <p>Apple's thinnest and lightest notebook.</p>
+            <p>From $999</p>
+            <button>Buy Now</button>
         </section>
     </main>
 
     <footer>
-        <!-- ... (Tu pie de página existente) ... -->
+        &copy; 2024 Apple Inc. All rights reserved.
     </footer>
-
-    <script>
-        // ... (Tu script JavaScript existente) ...
-    </script>
 </body>
 </html>
-
 
 
