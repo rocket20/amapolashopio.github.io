@@ -45,6 +45,53 @@ nav ul.nav li a {
     }
 }
 
+/* Agrega estilos para el icono de hamburguesa */
+.menu-icon {
+    display: none; /* Oculta el icono de hamburguesa por defecto */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estilos para el menú de navegación en pantallas más pequeñas */
+@media only screen and (max-width: 768px) {
+    nav ul.nav {
+        display: none; /* Oculta las categorías en pantallas pequeñas */
+    }
+
+    .menu-icon {
+        display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
+    }
+
+    nav ul.nav.show {
+        display: block; /* Muestra el menú cuando se hace clic en el icono de hamburguesa */
+    }
+
+    nav ul.nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Estilos para animar el icono de hamburguesa cuando se hace clic */
+.nav-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.nav-open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 img {
     max-width: 100%;
     height: auto;
