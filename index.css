@@ -27,6 +27,17 @@ nav ul.nav li {
     margin-right: 20px; /* Ajusta el espacio entre las categorías según tu preferencia */
 }
 
+/* Alinea las categorías al centro */
+nav ul.nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* Elimina el espacio entre las categorías y ajusta según tu preferencia */
+nav ul.nav li {
+    margin-right: 0;
+}
+
 nav ul.nav li a {
     text-decoration: none;
     color: black; /* Color de texto para las categorías */
