@@ -33,17 +33,17 @@ nav ul.nav li a {
     font-size: 16px; /* Tamaño de fuente para las categorías */
 }
 
-/* Ajusta el estilo específico para pantallas más pequeñas si es necesario */
+/* Estilos generales para pantallas grandes */
+
 @media only screen and (max-width: 768px) {
-    nav ul.nav {
-        text-align: left; /* Ajusta la alineación para el menú hamburguesa */
+    /* Estilos específicos para pantallas pequeñas */
+    body {
+        font-size: 14px; /* Ajusta el tamaño de fuente para pantallas pequeñas */
     }
 
-    nav ul.nav li {
-        display: block;
-        margin: 10px 0; /* Ajusta el espacio entre las categorías en el menú hamburguesa */
-    }
+    /* Agrega más reglas según sea necesario para adaptar tu diseño en pantallas pequeñas */
 }
+
 
 /* Agrega estilos para el icono de hamburguesa */
 .menu-icon {
@@ -134,6 +134,7 @@ nav{
     margin-left: 50px;
     display: block;
 }
+
 .login
 {
     display: flex;
