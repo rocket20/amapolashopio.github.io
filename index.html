@@ -1,282 +1,174 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amapola</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-
-        header, nav, section {
-            border-top: 5px solid #fff; /* Borde blanco en la parte superior */
-            transition: border-top 0.3s ease; /* Transición suave */
-        }
-
-        header {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            z-index: 1000; /* Para estar por encima del resto del contenido */
-        }
-
-        header img {
-            max-width: 150px;
-        }
-
-        nav {
-            background-color: #fff;
-            color: #000;
-            text-align: center;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            position: fixed;
-            width: 100%;
-            top: 80px; /* Ajusta según el tamaño del header */
-            z-index: 1000; /* Para estar por encima del resto del contenido */
-        }
-
-        nav a {
-            margin: 0 15px;
-            color: #000;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        main {
-            padding: 120px 20px 20px; /* Ajuste del espacio para evitar que el contenido se oculte detrás del header y nav */
-            position: relative; /* Asegura que las secciones sean posicionadas en relación con el main */
-            overflow: hidden; /* Oculta el contenido que se desborda de las secciones */
-        }
-
-        section {
-            margin-bottom: 30px;
-            display: flex;
-            overflow-x: scroll;
-            scroll-behavior: smooth; /* Transición suave al hacer scroll */
-        }
-
-        .product {
-            display: flex;
-            flex-wrap: nowrap;
-        }
-
-        .product > div {
-            flex: 0 0 auto;
-            margin: 10px;
-            text-align: center;
-            max-width: 300px; /* Máximo ancho de cada producto */
-        }
-
-        .product img {
-            max-width: 100%;
-            height: auto;
-            max-height: 300px; /* Tamaño máximo de la foto */
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #000;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: relative;
-            clear: both; /* Asegura que el pie de página esté después del contenido */
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 14px;
-        }
-
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 8px;
-            color: #fff;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-        }
-
-        form button {
-            background-color: #fff;
-            color: #000;
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
-        <img src="assets/images/logo/logoamapola.svg" alt="Amapola Logo">
+        <div class="header">
+            <a href="index.html" class="name"><h1>AMAPOLA</h1></a>
+        </div>
     </header>
-    
     <nav>
-        <a href="#">SHOP ALL</a>
-        <a href="#">NEW ARRIVALS</a>
-        <a href="#">READY TO WEAR</a>
-        <a href="#">RESORT</a>
-        <a href="#">BRIDAL</a>
-        <a href="#">HOME COLLECTION</a>
+        <ul class="nav">
+            <li><a href=""  class="nav-detail">New Arrivals</a></li>
+            <li class="designer" ><a href="" class="nav-detail">Designers</a>
+                <!-- <ul class="dropdown">
+                    <li class="type"><a href="">Alia</a></li>
+                    <li class="type"><a href="">link2</a></li>
+                </ul> -->
+            </li>
+            <li><a href="Mother-Day-Gift.html" class="nav-detail">Bags</a></li>
+            <li><a href="" class="nav-detail">Accessories</a></li>
+            <li><a href="" class="nav-detail">Jewelry</a></li>
+            <li><a href="" class="nav-detail">Watches</a></li>
+            <li><a href="" class="nav-detail">Sale</a></li>
+        </ul>
+        <div class="login">
+            <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="35px" height="27px" fill="currentColor" style="color: black;" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg></a>
+        </div>
     </nav>
-
     <main>
-        <section class="product">
-            <!-- Contenido de la sección 1 -->
-            <div>            
-                <img src="assets/images/1.jpg" alt="Producto 1"> 
+        <div class="homeborder">
+            <div class="contanier"> 
+                <div class="text">
+                    <h2>Treat yourself sale</h2>
+                    <br>
+                    <p class="text-3">Extra $200 off select items with code TY200 offer ends 4/26 at 11:59PM ET</p>
+                    <br>
+                    <div class="bordershopbutt">
+                        <a href="Next-Level-Neutrals.html"><button>SHOP NOW</button></a>
+                    </div>
+                </div>
             </div>
-            <div>                     
-                <img src="assets/images/2.jpg" alt="Producto 2">   
+            <img  class="homeimage"src="img/home back page.webp" alt="this is image ">
+        </div>
+        <div class="product">
+            <h2 class="productheding">Featured Items</h2>
+            <div class="listcontanier">
+                <div class="elem">
+                    <a href="LOUIS VUITTON-bag1.html" target="blank"><img src="img/product1.jpg" alt="this is image"></a>
+                    <div class="elemtext">
+                        <a href="LOUIS VUITTON-bag1.html" target="blank" class="name"><h3>louis vuitton</h3></a>
+                        <p class="pelemtext">Taurillon twist one handle pm greige</p>
+                        <p class="pelemtext">Condition: Excellent</p>
+                        <p ><b>$3,495</b></p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <a href="CHANEL-bag2.html" target="blank"><img src="img/product2.jpg" alt="this is image"></a>
+                    <div class="elemtext">
+                        <a href="CHANEL-bag2.html" target="blank" class="name"><h3>chanel</h3></a>
+                        <p class="pelemtext">Calfskin quilted small boy flap grey</p>
+                        <p class="pelemtext">Condition: Excellent</p>
+                        <p ><b>$4,995</b></p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <a href="STELLA MCCARTNEY-bag3.html" target="blank"><img src="img/product3.jpg" alt="this is image"></a>
+                    <div class="elemtext">
+                        <a href="STELLA MCCARTNEY-bag3.html" target="blank" class="name"><h3>stella mccartney</h3></a>
+                        <p class="pelemtext">Eco alter nappa perforated logo samll hobo mist</p>
+                        <p class="pelemtext">Condition: Excellent</p>
+                        <p ><b>$575</b></p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <a href="GIVENCHY-bag4.html"target="blank"><img src="img/product4.jpg" alt="this is image"></a>
+                    <div class="elemtext">
+                        <a href="GIVENCHY-bag4.html"target="blank" class="name"><h3>givenchy</h3></a>
+                        <p class="pelemtext">Box calfskin media 4g shoulder bag beige cappuccino</p>
+                        <p class="pelemtext">Condition: Very good</p>
+                        <p ><b>$1,095</b></p>
+                    </div>
+                </div>
+                <div class="elem">
+                    <a href="GIVENCHY-bag5.html" target="blank"><img src="img/product5.jpg" alt="this is image"></a>
+                    <div class="elemtext">
+                        <a href="GIVENCHY-bag5.html" target="blank" class="name"><h3>givenchy</h3></a>
+                        <p class="pelemtext">Sugar goatskin small antigona pale blue</p>
+                        <p class="pelemtext">Condition: Very good</p>
+                        <p ><b>$1,395</b></p>
+                    </div>
+                </div>
             </div>
-            <div>          
-                <img src="assets/images/3.jpg" alt="Producto 3"> 
+        </div>
+        <div class="mazerproduct">
+            <div class="boxcontanier">
+                <div class="elem1">
+                    <a href="Mother-Day-Gift.html"><img src="img/boximage1.webp" alt="this is image"></a>
+                    <div class="elem1text">
+                        <a href="Mother-Day-Gift.html" target="blank" class="name"><h3>Mother's Day Gifts</h3></a>
+                        <p class="pelemtext2">Surprise your style icon with luxe picks from our curated gift collection.</p>
+                        <a class="pelemtext2 " href="Mother-Day-Gift.html" target="blank">Shop now</a>
+                    </div>
+                </div>
+                <div class="elem1">
+                    <a href="Next-Level-Neutrals.html"><img src="img/boximag2.webp" alt=""></a>
+                    <div class="elem1text">
+                        <a href="Next-Level-Neutrals.html"target="blank" class="name"><h3>Next Level Neutrals</h3></a>
+                        <p class="pelemtext2">These neutral palettes mix effortlessly with just about everything.</p>
+                        <a class="pelemtext2" href="#" target="blank" class="name">Shop now</a>
+                    </div>
+                </div>
             </div>
-            <div>       
-                <img src="assets/images/4.jpg" alt="Producto 4">
-            </div>
-            <div>            
-                <img src="assets/images/5.jpg" alt="Producto 5"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 6"> 
-            </div>
-        </section>
-
-        <section class="product">
-            <!-- Contenido de la sección 2 -->
-            <div>       
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section> 
-            <section class="product">
-                 <div>
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section>
-            <section class="product">
-                 <div>  
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section>
-            <section class="product">
-                 <div> 
-                <img src="assets/images/1.jpg" alt="Producto 7">
-            </div>
-            <div>            
-                <img src="assets/images/2.jpg" alt="Producto 8"> 
-            </div>
-            <div>                
-                <img src="assets/images/3.jpg" alt="Producto 9"> 
-            </div>
-            <div>            
-                <img src="assets/images/4.jpg" alt="Producto 10"> 
-            </div>
-            <div>                
-                <img src="assets/images/5.jpg" alt="Producto 11"> 
-            </div>
-            <div>                
-                <img src="assets/images/6.jpg" alt="Producto 12"> 
-            </div>
-        </section>
-
-        <!-- Agrega más secciones según sea necesario -->
-
+        </div>
     </main>
-
     <footer>
-        <a href="#">About Amapola</a>
-        <a href="#">Behind the Brand</a>
-        <a href="#">Client Service</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Stores</a>
-        <a href="#">Wholesale</a>
-        <a href="#">Follow Us</a>
-        <a href="#">Instagram</a>
-        <a href="#">TikTok</a>
-        <a href="#">Facebook</a>
-        
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-        
-        &copy; 2024 Amapola. All rights reserved.
+        <div class="footercontanier">
+            <div class="elem2">
+                <h3>Customer Service</h3>
+                <div class="customer">
+                    <p class="customertext">Contact Us</p>
+                    <p class="customertext">My Account</p>
+                    <p class="customertext">Shipping</p>
+                    <p class="customertext">Returns</p>
+                    <p class="customertext">FAQ</p>
+                    <p class="customertext">Give us feedback</p>
+                </div>
+            </div>
+            <div class="elem2">
+                <h3>Sell With Us</h3>
+                <div class="customer">
+                    <p class="customertext">How to sell</p>
+                    <p class="customertext">Submit an item</p>
+                    <p class="customertext">FASHIONPHILE Refresh</p>
+                    <p class="customertext">Designer Directory</p>
+                    <p class="customertext">Consignment</p>
+                    <p class="customertext">Sold items</p>
+                </div>
+            </div>
+            <div class="elem2">
+                <h3>Shop With Us</h3>
+                <div class="customer">
+                    <p class="customertext">Authenticity</p>
+                    <p class="customertext">Certified</p>
+                    <p class="customertext">Gift Cards</p>
+                    <p class="customertext">Personal Shopping</p>
+                    <p class="customertext ">FASHIONPHILE Reserve</p>
+                </div>
+            </div>
+            <div class="elem2">
+                <h3><a href="About.html" class="name2">About Us</a></h3>
+                <div class="customer">
+                    <p class="customertext"><a href="About.html" class="name2">About</a></p>
+                    <p class="customertext">Locations</p>
+                    <p class="customertext">Careers</p>
+                    <p class="customertext">Influencer Program</p>
+                    <p class="customertext">Partners Program</p>
+                    <p class="customertext">Brand & retail partners</p>
+                    <p class="customertext">Test your skils</p>
+                </div>
+            </div>
+            <div></div>
+        </div>
     </footer>
 </body>
 </html>
-
-
-
 
