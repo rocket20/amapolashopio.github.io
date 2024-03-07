@@ -125,6 +125,19 @@
             </div>
         </div>
     </main>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuIcon = document.querySelector('.menu-icon');
+        const navList = document.querySelector('nav ul.nav');
+
+        menuIcon.addEventListener('click', function () {
+            navList.classList.toggle('show'); /* Agrega o quita la clase 'show' al hacer clic en el icono de hamburguesa */
+            menuIcon.classList.toggle('nav-open'); /* Agrega o quita la clase 'nav-open' para animar el icono de hamburguesa */
+        });
+    });
+</script>
+    
     <footer>
         <div class="footercontanier">
             <div class="elem2">
