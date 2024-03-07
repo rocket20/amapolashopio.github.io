@@ -15,6 +15,43 @@ header{
     color: black;
 }
 
+.logo img {
+    width: 100px; /* Ajusta el ancho del logo según tu preferencia */
+    height: auto;
+}
+
+/* Estilo para las categorías en la barra de navegación */
+nav ul.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Alinea las categorías al centro */
+}
+
+nav ul.nav li {
+    display: inline-block;
+    margin-right: 20px; /* Ajusta el espacio entre las categorías según tu preferencia */
+}
+
+/* Ajusta el estilo del enlace para las categorías */
+nav ul.nav li a {
+    text-decoration: none;
+    color: black; /* Color de texto para las categorías */
+    font-size: 16px; /* Tamaño de fuente para las categorías */
+}
+
+/* Agrega un estilo específico para pantallas más pequeñas, por ejemplo, menú hamburguesa */
+@media only screen and (max-width: 768px) {
+    nav ul.nav {
+        text-align: left; /* Ajusta la alineación para el menú hamburguesa */
+    }
+
+    nav ul.nav li {
+        display: block;
+        margin: 10px 0; /* Ajusta el espacio entre las categorías en el menú hamburguesa */
+    }
+}
+
 .name2
 {
     text-decoration: none;
