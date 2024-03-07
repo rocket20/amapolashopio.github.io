@@ -2,110 +2,196 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Quicksand:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&family=Quicksand:wght@300;400&display=swap');
 
-/* Mantén el resto de tus estilos existentes aquí */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+header{
+     padding: 20px; /* Reduce el padding para pantallas más pequeñas */
 }
-
 body {
-    font-family: 'Quicksand', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+nav ul.nav li {
+    margin-right: 10px; /* Reduce el espacio entre las categorías */
 }
 
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
 
-    nav ul.nav {
-        text-align: left;
-    }
-
-    nav ul.nav li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .name2 {
-        color: black;
-    }
-
-    .elem,
-    .elem1 {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .elem img,
-    .elem1 img {
-        width: 100%;
-        height: auto;
-    }
-
-    .product {
-        margin: 20px;
-    }
-
-    .mazerproduct {
-        margin: 20px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    footer {
-        margin-top: 20px;
-    }
-
-    .elem2 {
-        width: 100%;
-    }
-}
-
-/* Estilos para pantallas más grandes (PC) */
-header {
-    background-color: #FFFFFF;
-    padding: 50px;
-}
-
-.logo img {
-    width: 100px;
-    height: auto;
-}
-
+/* Asegúrate de que el menú de navegación esté bien estructurado */
 nav ul.nav {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
+    text-align: center; /* Alinea las categorías al centro */
 }
 
 nav ul.nav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 20px; /* Ajusta el espacio entre las categorías según tu preferencia */
 }
 
 nav ul.nav li a {
     text-decoration: none;
+    color: black; /* Color de texto para las categorías */
+    font-size: 16px; /* Tamaño de fuente para las categorías */
+}
+
+/* Ajusta el estilo específico para pantallas más pequeñas si es necesario */
+@media only screen and (max-width: 768px) {
+    nav ul.nav {
+        text-align: left; /* Ajusta la alineación para el menú hamburguesa */
+    }
+
+    nav ul.nav li {
+        display: block;
+        margin: 10px 0; /* Ajusta el espacio entre las categorías en el menú hamburguesa */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.name
+{
+    text-decoration: none;
     color: black;
-    font-size: 16px;
 }
-
-.productheding {
-    text-align: center;
-    padding: 40px;
+.name2
+{
+    text-decoration: none;
+    color: white;
+}
+.name2:hover{
+    text-decoration: underline;
+}
+h1
+{
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 60px;
+    /* font-family: 'Mulish', sans-serif; */
     font-family: 'Quicksand', sans-serif;
-    font-size: 32px;
-    margin: 20px;
 }
+*
+{
+    margin:0%;
+}
+nav{
+    background-color: #FFFFFF;
+    padding: 20px;
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+.nav
+{
+    flex-wrap: wrap;
+    margin-left: 50px;
+    display: block;
+}
+.login
+{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+li{
+    float: left;
+    list-style: none;
+}
+.nav-detail
+{
+    color: black;
+    margin-left:25px;
+    font-size:20px;
+    text-decoration: none;
+    text-align: center;
 
-.elem,
-.elem1 {
+}
+/* .dropdown
+{
+    display: none;
+}
+.designer:hover .dropdown
+{
+display: block;
+}
+.type
+{
+    float:none;
+    background-color:aliceblue; 
+    padding: 30px;
+
+}
+.type a
+{
+    text-align: center;
+} */
+.homeborder
+{
+    width:100%;
+    height: 700px;
+}
+.homeimage
+{
+    width: 100%;
+    height: 700px;
+}
+.contanier
+{
+    /* /* display: flex;
+    flex-direction: column; */
+    padding: 200px;
+    position: absolute; 
+    
+} 
+.text
+{
+    width: 450px;
+    position:absolute;
+    left:150px;   
+}
+.text h2{
+    font-size: 25.8px;
+    padding:20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.text-3{
+    font-size: 19px;
+    padding:20px;
+    color: #2E3033;
+    font-family: Metropolis,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.bordershopbutt
+{
+     padding:20px;
+     /* text-align: center; */
+
+}
+.bordershopbutt button
+{
+    width: 300px;
+    height: 55px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 9px;
+    box-shadow: 4px 4px 5px black;
+    cursor: pointer;
+
+}
+button:hover{
+    text-decoration: underline;
+}
+.listcontanier,.boxcontanier,.footercontanier
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.elem
+{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,89 +200,125 @@ nav ul.nav li a {
     justify-content: space-around;
     align-content: center;
 }
-
-.elem img,
-.elem1 img {
-    width: 100%;
-    height: auto;
+.elem img{
+    width: 250px;
+    height: 350px;
 }
-
-.elemtext,
-.elem1text {
+.elemtext
+{
     padding: 10px;
     text-align: center;
     font-size: 20px;
 }
-
-.elemtext h3,
-.elem1text h3 {
+.elemtext h3{
     text-transform: uppercase;
     letter-spacing: 5px;
     padding: 10px;
-    color: black;
+    color: black
 }
-
-.elemtext h3:hover,
-.elem1text h3:hover {
+.elemtext h3:hover{
     text-decoration: underline;
     text-shadow: 2px 2px 8px;
+    
 }
-
-.pelemtext,
-.pelemtext p {
+.pelemtext{
     padding: 10px;
     font-size: 20px;
     color: #707173;
 }
-
+.pelemtext p
+{
+    font-size: 20px;
+}
+.productheding
+{
+    text-align: center;
+    padding: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    margin: 20px;
+}
 .product {
     margin: 40px;
 }
+.elem1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 550px;
+    justify-content: space-around;
+}
+.elem1 img{
+    width: 550px;
+    height: 500px;
+}
+.elem1text
+{
+    padding: 20px;
+    padding-left: 0px;
+    align-self: flex-start;
 
-.elem1text h3 {
+}
+.elem1text h3{
+    padding: 10px;
+    padding-left: 0%;
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
 }
 
-.pelemtext2 {
+.pelemtext2{
     font-size: 20px;
     color: #707173;
     padding: 10px;
     padding-left: 0%;
     margin: 0px;
 }
+.mazerproduct
+{
+    margin:100px;
+    margin-top:200px;
+    margin-bottom:200px;
 
-.mazerproduct {
-    margin: 100px;
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
-
-footer {
-    background-color: black;
-    width: auto;
+footer
+{
+    background-color:black;
+    width:auto;
     height: auto;
 }
-
-.elem2 h3 {
+.elem2 h3
+{
     color: white;
 }
-
-.customer {
+.customer
+{
     padding: 20px;
     padding-left: 0%;
     color: white;
     font-size: 20px;
 }
-
-.elem2 {
+.elem2
+{
     font-size: 20px;
+    
+}
+.customertext
+{
+    padding: 5px;
+    padding-left:0%;
+}
+.elem2
+{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items:flex-start;
     flex-wrap: wrap;
     width: 300px;
     justify-content: space-around;
-    margin-top: 60px;
+    margin-top:60px;
 }
+
+
 
