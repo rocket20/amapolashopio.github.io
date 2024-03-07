@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&family=Quicksand:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,300;1,400&display=swap');
+
+
+header{
+    background-color: #FFFFFF;
+    padding: 50px;
+}
+.name
+{
+    text-decoration: none;
+    color: black;
+}
+.name2
+{
+    text-decoration: none;
+    color: white;
+}
+.name2:hover{
+    text-decoration: underline;
+}
+h1
+{
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 60px;
+    /* font-family: 'Mulish', sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+*
+{
+    margin:0%;
+}
+nav{
+    background-color: #FFFFFF;
+    padding: 20px;
+    /* font-family: 'IBM Plex Serif', serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+.nav
+{
+    flex-wrap: wrap;
+    margin-left: 50px;
+    display: block;
+}
+.login
+{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+li{
+    float: left;
+    list-style: none;
+}
+.nav-detail
+{
+    color: black;
+    margin-left:25px;
+    font-size:20px;
+    text-decoration: none;
+    text-align: center;
+
+}
+/* .dropdown
+{
+    display: none;
+}
+.designer:hover .dropdown
+{
+display: block;
+}
+.type
+{
+    float:none;
+    background-color:aliceblue; 
+    padding: 30px;
+
+}
+.type a
+{
+    text-align: center;
+} */
+.imgCenter {
+    padding: 10px;
+}
+.image
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+.center {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.desc {
+    margin: 10px;
+    text-align: left;
+}
+
+.contaner3
+{
+    margin-left: 115px;
+    margin-right: 115px;
+}
+
+.para
+{text-align: justify;
+padding: 15px;
+font-family: 'Nanum Gothic', sans-serif;
+}
+
+.head
+{
+    padding: 10px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.footercontanier
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer
+{
+    background-color:black;
+    width:auto;
+    height: auto;
+}
+.elem2 h3
+{
+    color: white;
+}
+.customer
+{
+    padding: 20px;
+    padding-left: 0%;
+    color: white;
+    font-size: 20px;
+}
+.elem2
+{
+    font-size: 20px;
+    
+}
+.customertext
+{
+    padding: 5px;
+    padding-left:0%;
+}
+.elem2
+{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    width: 300px;
+    justify-content: space-around;
+    margin-top:60px;
+}
