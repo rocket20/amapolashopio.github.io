@@ -2,18 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Quicksand:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&family=Quicksand:wght@300;400&display=swap');
 
-/* Estilos generales */
-body {
+/* Mantén el resto de tus estilos existentes aquí */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Contenedor principal */
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Estilos para pantallas más pequeñas */
 @media only screen and (max-width: 768px) {
     header {
         padding: 20px;
@@ -32,21 +36,13 @@ body {
         color: black;
     }
 
-    .elem {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .elem img {
-        width: 100%;
-        height: auto;
-    }
-
+    .elem,
     .elem1 {
         width: 100%;
         margin-bottom: 20px;
     }
 
+    .elem img,
     .elem1 img {
         width: 100%;
         height: auto;
