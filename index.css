@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Quicksand:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300;1,400&family=Quicksand:wght@300;400&display=swap');
 
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+} 
 header{
     background-color: #FFFFFF;
     padding: 50px;
@@ -11,6 +14,7 @@ header{
     text-decoration: none;
     color: black;
 }
+
 .name2
 {
     text-decoration: none;
@@ -49,6 +53,24 @@ nav{
     flex-direction: row-reverse;
     
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Ejemplo de menú hamburguesa */
+.nav {
+    display: none; /* Ocultar el menú principal en pantallas pequeñas */
+}
+
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+    }
+
+    /* Agregar estilos adicionales para el menú hamburguesa */
+}
+
 li{
     float: left;
     list-style: none;
