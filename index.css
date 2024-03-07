@@ -9,17 +9,14 @@ body {
     margin: 0;
     padding: 0;
 }
-nav ul.nav li {
-    margin-right: 10px; /* Reduce el espacio entre las categorías */
-}
-
-
 /* Asegúrate de que el menú de navegación esté bien estructurado */
 nav ul.nav {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center; /* Alinea las categorías al centro */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul.nav li {
@@ -27,15 +24,8 @@ nav ul.nav li {
     margin-right: 20px; /* Ajusta el espacio entre las categorías según tu preferencia */
 }
 
-/* Alinea las categorías al centro */
-nav ul.nav {
-    display: flex;
-    justify-content: center;
-}
-
-/* Elimina el espacio entre las categorías y ajusta según tu preferencia */
-nav ul.nav li {
-    margin-right: 0;
+nav ul.nav li:last-child {
+    margin-right: 0; /* Elimina el margen del último elemento para evitar desbordamiento */
 }
 
 nav ul.nav li a {
@@ -54,8 +44,6 @@ nav ul.nav li a {
 
     /* Agrega más reglas según sea necesario para adaptar tu diseño en pantallas pequeñas */
 }
-
-
 /* Agrega estilos para el icono de hamburguesa */
 .menu-icon {
     display: none; /* Oculta el icono de hamburguesa por defecto */
@@ -104,7 +92,7 @@ nav ul.nav li a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
