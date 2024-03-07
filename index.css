@@ -6,10 +6,9 @@ header{
      padding: 20px; /* Reduce el padding para pantallas más pequeñas */
 }
 body {
-    max-width: 100%;
-    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
-
 nav ul.nav li {
     margin-right: 10px; /* Reduce el espacio entre las categorías */
 }
