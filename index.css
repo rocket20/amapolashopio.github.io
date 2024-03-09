@@ -78,11 +78,22 @@ nav ul.nav li a {
     transition: 0.4s;
 }
 
-/* Estilos para el menú de navegación en pantallas más pequeñas */
 @media only screen and (max-width: 768px) {
-    nav ul.nav {
-        display: none; /* Oculta las categorías en pantallas pequeñas */
+    /* Ajustes específicos para pantallas pequeñas */
+
+    /* Ejemplo de ajuste para las imágenes */
+    .elem img,
+    .elem1 img {
+        max-width: 100%;
+        height: auto;
     }
+
+    /* Ajusta márgenes y paddings según sea necesario */
+    .text {
+        width: 100%; /* Ajusta el ancho del texto */
+        text-align: center; /* Centra el texto */
+    }
+}
 
     .menu-icon {
         display: block; /* Muestra el icono de hamburguesa en pantallas pequeñas */
