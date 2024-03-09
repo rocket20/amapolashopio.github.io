@@ -9,6 +9,26 @@ body {
     margin: 0;
     padding: 0;
 }
+
+nav {
+    background-color: #FFFFFF;
+    padding: 20px;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre elementos si es necesario */
+    align-items: center; /* Centra verticalmente */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%; /* Ajusta el ancho de la imagen según sea necesario */
+    height: auto;
+}
+
 /* Asegúrate de que el menú de navegación esté bien estructurado */
 nav ul.nav {
     list-style: none;
